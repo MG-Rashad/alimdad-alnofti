@@ -7,11 +7,11 @@ import { AnimatedSection } from "@/components/animated-section";
 const clients = [
   {
     name: "Akakus Oil Operations",
-    logo: "/client 1.png",
+    logo: "/Client 1.png",
   },
   {
     name: "Brega Petroleum Marketing Co.",
-    logo: "/client 2.png",
+    logo: "/Client 2.png",
   },
 ];
 
