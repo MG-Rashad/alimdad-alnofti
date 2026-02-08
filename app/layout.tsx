@@ -18,6 +18,11 @@ export const metadata: Metadata = {
   title: "ALIMDAD ALNOFTI - For Oil Services",
   description:
     "ALIMDAD ALNOFTI - Integrated oil and gas services - Procurement, Logistics, Equipment Supply & HSE Solutions",
+  
+  // --- I ADDED THIS PART FOR THE LOGO ---
+  icons: {
+    icon: "/logo.png", // This points to the file in your 'public' folder
+  },
 };
 
 export const viewport: Viewport = {
