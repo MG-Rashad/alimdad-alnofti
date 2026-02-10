@@ -8,11 +8,12 @@ import { HeroSection } from "@/components/sections/hero-section";
 import { ServicesSection } from "@/components/sections/services-section";
 import { AboutSection } from "@/components/sections/about-section";
 import { ClientsSection } from "@/components/sections/clients-section";
-import { PartnersSection } from "@/components/sections/partners-section";
+// PartnersSection import removed
 import { ContactSection } from "@/components/sections/contact-section";
 import { CtaSection } from "@/components/sections/cta-section";
 
-const sections = ["home", "services", "about", "clients", "partners", "contact"];
+// Removed "partners" from the list so the scroll observer doesn't look for it
+const sections = ["home", "services", "about", "clients", "contact"];
 
 export default function Page() {
   const { dir, locale } = useLocale();
@@ -60,7 +61,7 @@ export default function Page() {
         <ServicesSection />
         <AboutSection />
         <ClientsSection />
-        <PartnersSection />
+        {/* <PartnersSection /> removed */}
         <CtaSection onNavigate={handleNavigate} />
         <ContactSection />
       </main>

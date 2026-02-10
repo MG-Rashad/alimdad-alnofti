@@ -10,6 +10,7 @@ const heroImages = [
   { src: "/hero 1.jpg", alt: "Oil refinery at night with illuminated towers" },
   { src: "/hero 2.jpg", alt: "Industrial oil refinery complex at dusk" },
   { src: "/hero 4.jpg", alt: "Offshore oil platform in the ocean at twilight" },
+  { src: "/hero 5.jpg", alt: "Offshore oil platform in the ocean at twilight" },
 ];
 
 export function HeroSection({
