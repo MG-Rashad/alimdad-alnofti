@@ -6,7 +6,8 @@ import { useLocale } from "@/lib/locale-context";
 import { locales, localeNames, type Locale } from "@/lib/i18n";
 import { Menu, X, Globe, ChevronDown, Facebook, Linkedin } from "lucide-react";
 
-const navItems = ["home", "services", "about", "clients", "partners", "contact"] as const;
+// --- REMOVED "partners" FROM THIS LIST ---
+const navItems = ["home", "services", "about", "clients", "contact"] as const;
 
 function XIcon({ className }: { className?: string }) {
   return (
