@@ -160,7 +160,7 @@ const en = {
       phone_title: "Phone",
       phone: "+218 93 01 1 1 167",
       hours_title: "Working Hours",
-      hours: "Sunday - Thursday: 8:00 AM - 5:00 PM",
+      hours: "Sunday - Thursday: 9:00 AM - 5:00 PM",
     },
   },
   footer: {
