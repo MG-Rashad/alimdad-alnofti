@@ -1,5 +1,7 @@
 const en = {
   nav: {
+    brand_main: "ALIMDAD OIL COMPANY",
+    brand_sub: "FOR OIL SERVICES",
     home: "Home",
     services: "Services",
     about: "About Us",

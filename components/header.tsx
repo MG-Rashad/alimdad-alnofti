@@ -49,17 +49,17 @@ export function Header({
         >
           <Image
             src="/logo.png"
-            alt="ALIMDAD ALNOFTI"
+            alt="ALIMDAD OIL COMPANY"
             width={48}
             height={48}
             className="h-10 w-10 lg:h-12 lg:w-12 object-contain"
           />
           <div className="hidden sm:block">
             <p className="text-sm lg:text-base font-bold text-foreground leading-tight">
-              ALIMDAD ALNOFTI
+              {t.nav.brand_main}
             </p>
             <p className="text-[10px] lg:text-xs text-muted-foreground tracking-wider uppercase">
-              For Oil Services
+              {t.nav.brand_sub}
             </p>
           </div>
         </button>

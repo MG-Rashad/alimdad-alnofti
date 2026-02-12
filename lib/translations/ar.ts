@@ -1,5 +1,7 @@
 const ar = {
   nav: {
+    brand_main: "شركة الإمداد النفطي",
+    brand_sub: "لخدمات النفطية ",
     home: "الرئيسية",
     services: "خدماتنا",
     about: "من نحن",
