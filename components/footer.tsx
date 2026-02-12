@@ -46,26 +46,25 @@ export function Footer({ onNavigate }: { onNavigate: (section: string) => void }
                 </p>
               </div>
             </div>
-            <p className="text-sm text-teal-300 leading-relaxed mb-5">
+            
+            {/* Description */}
+            <p className="text-sm text-teal-300 leading-relaxed">
               {t.footer.description}
             </p>
-            {/* Social Media Icons */}
-            <div className="flex items-center gap-2">
-              {socialLinks.map((social) => {
-                const Icon = social.icon;
-                return (
-                  <a
-                    key={social.label}
-                    href={social.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={social.label}
-                    className="flex items-center justify-center h-9 w-9 rounded-lg bg-teal-100 text-teal-900 hover:bg-teal-50 hover:text-teal-800 transition-colors"
-                  >
-                    <Icon className="h-4 w-4" />
-                  </a>
-                );
-              })}
+
+            {/* Separator Line */}
+            <div className="my-4 border-b border-teal-800"></div>
+
+            {/* New: Statistical Code & Legal Name */}
+            <div className="text-xs text-teal-400 space-y-1 mb-5">
+              <p>
+                <span className="font-semibold text-teal-200">{t.footer.stat_code_label}: </span>
+                {t.footer.stat_code}
+              </p>
+              <p>
+                <span className="font-semibold text-teal-200">{t.footer.legal_name_label}: </span>
+                {t.footer.legal_name}
+              </p>
             </div>
           </div>
 
@@ -111,7 +110,7 @@ export function Footer({ onNavigate }: { onNavigate: (section: string) => void }
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* Contact Info + Social Media */}
           <div>
             <h3 className="font-semibold text-teal-50 mb-4">
               {t.footer.contact_info}
@@ -130,6 +129,25 @@ export function Footer({ onNavigate }: { onNavigate: (section: string) => void }
                 <span dir="ltr">{t.contact_page.info.phone}</span>
               </li>
             </ul>
+
+            {/* Moved: Social Media Icons */}
+            <div className="flex items-center gap-2 mt-6">
+              {socialLinks.map((social) => {
+                const Icon = social.icon;
+                return (
+                  <a
+                    key={social.label}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={social.label}
+                    className="flex items-center justify-center h-9 w-9 rounded-lg bg-teal-100 text-teal-900 hover:bg-teal-50 hover:text-teal-800 transition-colors"
+                  >
+                    <Icon className="h-4 w-4" />
+                  </a>
+                );
+              })}
+            </div>
           </div>
         </div>
 
